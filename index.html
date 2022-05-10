@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тест</title>
+<meta charset="utf-8">
+</head>
+<body>
+    <div id="a" align = "center"><table border = 0> 
+        <tr><td><table border = 0> 
+            <tr><td><button onclick="add_1aq();">Вопрос с выбором одного варианта ответа</button></td><td><button onclick="add_maq();">Вопрос со множественным выбором</button></td><td><button onclick="add_qwa();">Вопрос с развёрнутым вариантом ответа</button></td></tr>
+                 </table></div></td></tr><tr><td>
+                <div id="o"><form action="/create.php" method="post">
+                    <fieldset><legend>Настройка теста</legend>
+                        <select name="cathegory">
+                        <option selected="selected" value="none">Без категории</option>
+                        <option value="education">Образование</option>
+                        <option value="entertainment">Развлечение</option>
+                    </select><br />
+                    <input checked="checked" name="mix" type="radio" value="no" /> Не перемешивать вопросы <input name="mix" type="radio" value="yes" />Перемешивать вопросы <br />
+                    Название теста: <input name="name" type="text" autofocus/> <br /> 
+                    Подсчёт результатов: <div id="res"></div></fieldset>
+                    <fieldset><legend>Тест</legend>
+                    <div id="test"></div>
+                    <br /></fieldset>
+                    <input type="submit" value="Создать тест" />
+                </form> 
+                </td></tr>
+        </table></div>
+    </body>
+    <script src="interactive.js"></script>
+</html>
